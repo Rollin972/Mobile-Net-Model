@@ -1,0 +1,22 @@
+body
+{
+    background: linear-gradient(#ff00d4,#00ddff);
+    color: ghostwhite;
+    font-family: 'Original Surfer', cursive;
+}
+
+button
+{
+    font-size: 30px;
+}
+
+.heading
+{
+    width : 80%;
+    font-size: 22px;
+}
+#cam
+{
+    width : 350px;
+    height : 300px;
+}

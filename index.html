@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title> Image Reader </title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <link rel = "stylesheet" href = "style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <center>
+        <h1 class = "btn btn-default heading"> IMAGE RECOGNITION </h1>
+        <h2> The Model Is Trained To Identify The Following Objects </h2>
+        <h4>Clock</h4>
+        <hr>
+        <h4>Story Book</h4>
+        <hr>
+        <h4>Note Book</h4>
+        <hr>
+        <h4>Plush</h4>
+        <hr>
+        <h4>Box</h4>
+        <hr>
+        <h3>Your Webcam View</h3>
+        <div id="cam"></div>
+        <br><br> 
+        <button class = "btn btn-info" onclick = "take_snapshot()">Capture</button>
+        <h3>Your Image View</h3>
+        <div id = "result">
+        </div> 
+        <button class = "btn btn-success" onclick = "check()">Identify</button>
+        <h3>Object <span id = "object" ></span></h3>
+        <h3>Accuracy <span id = "accuracy" ></span></h3>
+    </center>
+    <script src = "main.js"></script>
+    </body>
+</html>
